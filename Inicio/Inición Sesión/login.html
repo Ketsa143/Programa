@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Iniciar Sesión</h1>
+        <div class="input-container">
+            <input type="email" id="correo" name="correo" placeholder="Correo Electrónico" required>
+        </div>
+        <div class="input-container">
+            <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required>
+            <span class="toggle-password" onclick="togglePasswordVisibility('contrasena')">
+                <i class="fa fa-eye" id="toggleIcon"></i> 
+            </span>
+        </div>
+        <div class="input-container">
+            <input type="checkbox" id="recordar" name="recordar">
+            <label for="recordar">Recuérdame</label>
+        </div>
+        <button onclick="login()">Entrar</button>
+        <p>¿Olvidaste tu contraseña? <a href="#">Recupérala aquí</a></p>
+        <p>¿No tienes cuenta? <a href="Registro/Registro.html">Regístrate</a></p>
+    </div>
+    <div class="alert error" id="errorMessage">
+        <i class="fa fa-exclamation-circle"></i>
+        <span id="errorText"></span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

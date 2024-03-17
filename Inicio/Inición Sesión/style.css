@@ -1,0 +1,148 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('Login.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: rgba(80, 47, 143, 0.7);
+    border-radius: 50px 50px 1px 1px;
+    padding: 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 ;
+}
+
+.input-container {
+    margin: 10px 0;
+    position: relative;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    outline: none;
+    font-size: 16px;
+}
+
+.input-container input:focus::placeholder {
+    color: transparent; 
+}
+
+.input-container label {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Evita la interacción con el texto del label */
+    font-size: 14px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 14px;
+    color: #502F8F;
+}
+
+h1 {
+    color: #D4AF37;
+}
+
+a {
+    color: #D4AF37;
+    text-decoration: none;
+}
+
+/* Estilos para los formularios */
+.input-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+label {
+    flex: 1;
+    text-align: right;
+    margin-right: 10px;
+    color: #fff;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"] {
+    flex: 2;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    background-color: #502F8F;
+    color: #D4AF37;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: rgb(173, 153, 194);
+    color: black;
+}
+
+/* Estilos para el botón "Mostrar" de la contraseña */
+.toggle-password {
+    flex: 1;
+    text-align: left;
+    cursor: pointer;
+}
+
+/* Estilos para el mensaje emergente (alert) */
+.alert {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #502F8F;
+    color: #D4AF37;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: none;
+    z-index: 9999;
+}
+
+
+.alert i {
+    margin-right: 10px;
+}
+
+/* Estilos para el mensaje de error */
+.error {
+    background-color: #FF5733;
+    color: #fff;
+}
+
+/* Estilos para el mensaje de éxito */
+.success {
+    background-color: #33FF6D;
+    color: #333;
+}
+
